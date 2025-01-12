@@ -8,7 +8,15 @@ import (
 	"os"
 	"strings"
 	"sync"
+
+	"github.com/sumit-behera-in/goLogger"
 )
+
+type StorageOptions struct {
+	StorageRoot       string
+	PathTransformFunc PathTransformFunc
+	Logger            *goLogger.Logger
+}
 
 type Storage struct {
 	StorageOptions

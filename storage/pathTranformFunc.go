@@ -6,17 +6,9 @@ import (
 	"encoding/hex"
 	"path/filepath"
 	"strings"
-
-	"github.com/sumit-behera-in/goLogger"
 )
 
 type PathTransformFunc func(string, string) (string, string)
-
-type StorageOptions struct {
-	StorageRoot       string
-	PathTransformFunc PathTransformFunc
-	Logger            *goLogger.Logger
-}
 
 // DefaultPathTransformFunc is the default path transform function, which splits the key by "+"
 // and returns the first part as path and the second part as file name
