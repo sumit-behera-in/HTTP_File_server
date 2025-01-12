@@ -19,10 +19,10 @@ var storage = Storage{
 }
 
 var WriteData = bytes.NewReader([]byte("some text"))
-var WriteKey = "user1+abc.pdf"
+var WriteKey = "user1^abc.pdf"
 
 var ReadData = bytes.NewReader([]byte("some text"))
-var ReadKey = "user2+abcd.pdf"
+var ReadKey = "user2^abcd.pdf"
 
 func TestStorage_WriteStream(t *testing.T) {
 	tests := []struct {
