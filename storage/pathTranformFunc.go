@@ -13,7 +13,7 @@ type PathTransformFunc func(string, string) (string, string)
 // DefaultPathTransformFunc is the default path transform function, which splits the key by "+"
 // and returns the first part as path and the second part as file name
 var DefaultPathTransformFunc = func(storageRoot string, key string) (string, string) {
-	keyContains := strings.Split(key, "+")
+	keyContains := strings.Split(key, "^")
 	userDetails := keyContains[0]
 	fileName := keyContains[1]
 	return storageRoot + "/" + userDetails, fileName
@@ -33,7 +33,7 @@ var DefaultPathTransformFunc = func(storageRoot string, key string) (string, str
 // This function is useful for generating unique and consistent paths for storing files
 // in a content-addressable storage system.
 var CASPathTransformFunc = func(storageRoot string, key string) (string, string) {
-	keyContains := strings.Split(key, "+")
+	keyContains := strings.Split(key, "^")
 	userDetails := keyContains[0]
 	fileExt := filepath.Ext(keyContains[1])
 	fileName := filepath.Base(keyContains[1])
