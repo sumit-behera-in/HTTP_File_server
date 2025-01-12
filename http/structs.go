@@ -1,4 +1,4 @@
-package tcp
+package HTTP
 
 import (
 	"net"
@@ -6,7 +6,7 @@ import (
 	"github.com/sumit-behera-in/goLogger"
 )
 
-type TCPTransportOptions struct {
+type HTTPTransportOptions struct {
 	Logger        *goLogger.Logger // Logger is the logger instance
 	ListenAddress string           // ListenAddress is the address on which the transport listens
 	Decoder       Decoder          // Decoder is the decoder that is used to decode the incoming data

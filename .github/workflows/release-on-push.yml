@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      APP_NAME: TCPFileServer # Define the application name here
+      APP_NAME: HTTPFileServer # Define the application name here
       APP_VERSION: v0.1.1 # Define the application version
 
     steps:

@@ -1,4 +1,4 @@
-module github.com/sumit-behera-in/TCPFileServer
+module github.com/sumit-behera-in/HTTPFileServer
 
 go 1.23.1
 

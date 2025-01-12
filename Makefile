@@ -1,5 +1,5 @@
 # Define the application name
-APP_NAME = "TCPFileServer"
+APP_NAME = "HTTPFileServer"
 
 # Detect the OS and architecture of the host system
 ifeq ($(OS),Windows_NT)

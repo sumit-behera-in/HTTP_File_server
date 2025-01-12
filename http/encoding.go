@@ -1,4 +1,4 @@
-package tcp
+package HTTP
 
 import (
 	"bytes"
