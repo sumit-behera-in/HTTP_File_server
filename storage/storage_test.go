@@ -120,7 +120,7 @@ func TestStorage_Delete(t *testing.T) {
 		},
 		{
 			name:    "delete non-existent file",
-			key:     "dbc+non_existent_file.txt",
+			key:     "dbc^non_existent_file.txt",
 			wantErr: true,
 		}, {
 			name:    "delete read file",
